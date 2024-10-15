@@ -1,0 +1,133 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  body {
+    background-image: url(fondo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  h1, h2, h3 {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  }
+  
+  h1 {
+    position: absolute;
+    top: 5%;
+    left: 40%;
+    font-size: 2.5em;
+    color: #ffcc00;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    font-weight: bold;
+  }
+  
+  h2, h3 {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .custom-textarea {
+    resize: none;
+    border: 2px solid #ffcc00;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    background-color: #f7f7f7;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+    width: 100%;
+  }
+  
+  .custom-btn {
+    background-color: #ff2a00;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 1.2em;
+    font-weight: bold;
+    width: 100%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .custom-btn:hover {
+    background-color: #ff8400;
+  }
+  
+  .mt-2 {
+    margin-top: 15px;
+  }
+  
+  .mt-3 {
+    margin-top: 20px;
+  }
+  
+  .busqueda {
+    margin-top: 12px;
+  }
+  
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 2em;
+      left: 10%;
+    }
+    h2, h3 {
+      font-size: 1.5em;
+    }
+    .custom-btn {
+      font-size: 1em;
+    }
+  }
+  
+  /* Estilos para la tabla del diccionario */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco semitransparente */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+  }
+  
+  th, td {
+    padding: 15px;
+    text-align: center;
+    border: 2px solid #ffcc00; /* Borde dorado */
+    font-size: 1.2em;
+    color: #333;
+  }
+  
+  th {
+    background-color: #ffcc00; /* Fondo dorado para encabezados */
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  }
+  
+  td {
+    background-color: #f7f7f7; /* Fondo claro para celdas */
+  }
+  
+  table tr:nth-child(even) td {
+    background-color: #fff0e6; /* Fondo ligeramente anaranjado para filas pares */
+  }
+  
+  table tr:hover td {
+    background-color: #ffe5b4; /* Cambio de color al pasar el cursor */
+  }
+  
+  #diccionario {
+    display: none;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  

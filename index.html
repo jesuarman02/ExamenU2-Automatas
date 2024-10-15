@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diccionario</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center" id="titulo">Diccionario</h1>
+        <br><br>
+        <div class="row">
+            <div class="col-md-6">
+                <h3 class="mt-3">Texto</h3>
+                <textarea id="texto" class="form-control custom-textarea" rows="7" placeholder="Pega aquí tu texto"></textarea>
+            </div>
+            <div class="col-md-6 busqueda">
+                <h2>Reemplazo con Diccionario</h2>
+                <label for="palabraDiccionario" class="mt-3">Selecciona una palabra</label>
+                <select id="palabraDiccionario" class="form-control custom-select">
+                    <option value="">-- Selecciona una palabra --</option>
+                    <option value="Hola">Hola</option>
+                    <option value="Mundo">Mundo</option>
+                    <option value="Casa">Casa</option>
+                    <option value="Perro">Perro</option>
+                    <option value="Amigo">Amigo</option>
+                    <option value="Familia">Familia</option>
+                    <option value="Trabajo">Trabajo</option>
+                    <option value="Coche">Coche</option>
+                    <option value="Libro">Libro</option>
+                    <option value="Comida">Comida</option>
+                </select>
+
+                <label for="sinonimo" class="mt-2">Selecciona un sinónimo</label>
+                <select id="sinonimo" class="form-control custom-select" disabled>
+                    <option value="">-- Selecciona un sinónimo --</option>
+                </select>
+
+                <button class="btn btn-primary mt-3 custom-btn" id="reemplazarTexto" disabled>Reemplazar</button>
+            </div>
+        </div>
+        <br>
+        <div class="text-center mt-4">
+            <button class="btn btn-primary custom-btn" id="limpiarCampos">Limpiar Campos</button>
+        </div>
+        <br><br>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="app.js"></script>
+</body>
+</html>
